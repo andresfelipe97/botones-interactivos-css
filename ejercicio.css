@@ -1,0 +1,32 @@
+.boton {
+  background-color: blueviolet;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.boton:hover {
+  color: green;
+  background-color: white;
+}
+
+.boton:before {
+  display: flex;
+  content: "PASA POR ENCIMA DE MI";
+  text-align: center;
+}
+
+.boton::after {
+  content: "!HECHO CARE VERGA¡";
+  opacity: 0;
+  text-align: center;
+}
+
+.boton:hover::before {
+  transform: translate(-50%, -50%) scale(3);
+  opacity: 0;
+}
+
+.boton:hover::after {
+  transform: translate(-50%, -50%) scale(3);
+  opacity: 1;
+}
